@@ -2,18 +2,22 @@
   width: 100vmin;
   
 }
-.buttons{
+.buttons1,.buttons{
     z-index: 3;
     position:absolute;
     top:12%;
     left:42%;
 }
 @media (max-width: 500px) {
-  .buttons{
+  .buttons1,.buttons{
     z-index: 3;
     position:absolute;
-    top:50%;
-    left:25%;
+    top:45%;
+    left:28%;
+}
+.buttons1{
+  top:50%;
+  left:35%;
 }
  }
 

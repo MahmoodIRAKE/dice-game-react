@@ -10,7 +10,7 @@ import AiOn from "../components/input/aiCheck";
 class MainPage extends React.Component {
     state = chosenGame(1);
     players = [1, 2];
-
+    buttons="buttons";
     // this function is to control plyer info and points
     playerController(player, sum, round, win) {
         this.setState({
@@ -96,6 +96,7 @@ class MainPage extends React.Component {
         this.setState({ finalScore: 100 })
         this.playerController(1, 0, 100, false);
         this.playerController(2, 0, 100, false)
+        this.buttons='buttons1'
     }
     // in this function we activate the AI
 
@@ -104,6 +105,12 @@ class MainPage extends React.Component {
         if (this.state.aiIsOn && this.state.currentPlayer === 1) {
             setTimeout(this.rollDice(), 1000)
         }
+    }
+    displayWinnerScreen(){
+        if(this.state[1].win||this.state[1].win ){
+            return false;
+        }
+        return true
     }
 
 
@@ -118,7 +125,8 @@ class MainPage extends React.Component {
         return (
 
             <div className='flexing-center'>
-                {this.players.map((player) => {
+                {this.displayWinnerScreen()?
+                <>{this.players.map((player) => {
                     return <Player player={player} score={this.state[player].score}
                         globalScore={this.state[player].globalScore} key={player}
                         showDot={this.state.currentPlayer === player ? true : false}
@@ -126,9 +134,9 @@ class MainPage extends React.Component {
                         win={this.state[player].win}
                         game={this.state.basic}
                     />
-                })}
+                })}</>:<></>}
 
-                <div className="buttons flexing-center col-direction">
+                <div className={`${this.buttons} flexing-center col-direction`}>
                     <ButtonGame logo={<i className="fas fa-plus-circle"></i>}
                         text="NEW GAME"
                         callBack={this.newGame} />

@@ -41,4 +41,8 @@ checked:is changable bolean value
 Text : for button text
 callback: action call back
 
+### `Dice`
+This is for showing Dice two Images of Dice according to choosed number
 
+### `round Input`
+This is For Getting Input From User

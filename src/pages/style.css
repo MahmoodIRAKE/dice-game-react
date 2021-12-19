@@ -5,14 +5,14 @@
 .buttons{
     z-index: 3;
     position:absolute;
-    top:10%;
-    left:43.5%;
+    top:12%;
+    left:42%;
 }
 @media (max-width: 500px) {
   .buttons{
     z-index: 3;
     position:absolute;
-    top:45%;
+    top:50%;
     left:25%;
 }
  }

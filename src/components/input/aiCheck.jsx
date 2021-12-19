@@ -1,10 +1,10 @@
 import React from "react";
 
-const AiOn=(checked,callback)=>{
+const AiOn=({checked,callback,text})=>{
+    let color=checked?'red':'';
  return(
      <div className="ui input flexing-center space">
-         <label >TURN ON AI</label>
-         <input type='checkbox' checked={checked} onChange={()=>console.log('sda')}/>
+         <button onClick={()=>callback()} style={{backgroundColor:color}}>{text}</button>
      </div>
  );
 }

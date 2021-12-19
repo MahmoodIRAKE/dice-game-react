@@ -25,14 +25,11 @@ export const chosenGame=(value)=>{
         win:false
     },
     finalScore:0,
+    finalScoreR:0,
     diceValues:[1,1],
-    aiIsOn:false
+    aiIsOn:false,
+    race:false,
+    basic:true,
     })
-  }
-  if(value===2){
-
-  }
-  if(value===3){
-
   }
 }

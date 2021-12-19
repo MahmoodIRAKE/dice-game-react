@@ -1,0 +1,11 @@
+.dice2,.dice1{
+  width: 20vmin;
+  height: 20vmin;
+  margin-bottom: 10px;
+  border: black solid 1px;
+  /* background:url("") no-repeat cover cover/center; */
+  background-image: url("../../assets/Images/dice-2.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}

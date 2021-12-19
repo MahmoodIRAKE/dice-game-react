@@ -1,0 +1,19 @@
+.main-screen{
+  width: 100vmin;
+  
+}
+.buttons{
+    z-index: 3;
+    position:absolute;
+    top:10%;
+    left:43.5%;
+}
+@media (max-width: 500px) {
+  .buttons{
+    z-index: 3;
+    position:absolute;
+    top:45%;
+    left:25%;
+}
+ }
+

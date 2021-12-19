@@ -1,0 +1,39 @@
+.player{
+    
+    width:100vmin;
+    height: 100vmin;
+    
+}
+.player-info{
+    width:100%;
+    font-size:8vmin;
+}
+.player-info h1{
+    margin-bottom: 4vmin;
+    margin-top: 4vmin;
+}
+.red-dot{
+    background-color: red;
+    width:2vmin;
+    height: 2vmin;
+    border-radius:100%;
+}
+.player-name{
+    width:50vmin;
+    font-size:4vmin;
+}
+.red-box{
+    background-color: red;
+    width:20vmin;
+    line-height:1rem;
+    color: #333;
+}
+.red-box h1{
+    font-size:6vmin;
+    color: #fff;
+}
+.win-text{
+    font-size: 6vmin;
+    color: red;
+
+}

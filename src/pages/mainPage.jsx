@@ -91,6 +91,7 @@ class MainPage extends React.Component {
     }
     // in this function we activate The Game We Want
     handleGame = () => {
+        console.log('dsfa')
         this.setState({ basic: !this.state.basic })
         this.setState({ race: !this.state.race })
         this.setState({ finalScore: 100 })
@@ -149,8 +150,8 @@ class MainPage extends React.Component {
                     <RoundInput roundValue={this.state.finalScoreR}
                         callback={this.handleRoundNumbers} game={this.state.basic} />
                     <AiOn checked={this.state.aiIsOn} callback={this.handleAi} text='Turn ON Ai' />
-                    <AiOn checked={this.state.basic} callback={this.handleGame} text='Basic Game' />
-                    <AiOn checked={this.state.race} callback={this.handleGame} text='Race Game' />
+                    <ButtonGame logo={<i className="fab fa-adn"></i>} callBack={()=>this.handleGame()} text='Basic Game' />
+                    <ButtonGame logo={<i className="fab fa-ravelry"></i>} callBack={()=>this.handleGame()} text='Race Game' />
                 </div>
 
             </div>
